@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    background-color: #141325;
+}
+
+i{
+
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(105%) contrast(104%);
+    transition: 0.3s;
+}
+
+button>i{
+
+    filter: invert(2%) sepia(4%) saturate(3482%) hue-rotate(201deg) brightness(97%) contrast(100%);
+    padding-left: 5px;
+}
+
+
+.box-shape>.shape{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.shape:first-child {
+    background-image: linear-gradient(#ff008c, #7a006c);
+    position: absolute;
+    margin: -80px 705px;
+}
+
+.shape:last-child {
+    background-image: linear-gradient(#206dc5, #0c233a);
+    position: absolute;
+    margin: 406px 1005px;
+}
+form{
+
+    background-color: rgba(129, 129, 129, 0.103);
+    backdrop-filter: blur(7px);
+    width: 330px;
+    height: 500px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 200px;
+    border:  2px solid #575666;
+    position: relative;
+}
+
+form>h2{
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: #fdfefedc;
+    text-align: center;
+    padding: 40px 0px 20px 0px 
+
+}
+
+form>input {
+    display: flex;
+    width: 227px;
+    height: 40px;
+    margin: 30px 0px 0px 44px;
+    border-radius: 3px;
+    padding: 5px 0px 5px 8px;
+    background: #41404e;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+}
+
+::placeholder{
+
+    color: #ffffffcc;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+form>button{
+
+    width: 235px;
+    height: 60px;
+    margin: 30px 0px 0px 44px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #030305;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.socialmedia>div{
+
+    background-color: #575666;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.socialmedia>div>i {
+    margin: 11px 12px;
+}
+
+
+.socialmedia{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+
+
+/* hover , focus */
+
+
+form>button:hover{
+
+background-color: #c4006c;
+transition: 0.3s;
+color: #ffffff;
+
+}
+
+form>input:focus{
+
+    background: #51505a;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.socialmedia>div:hover>i{
+
+    filter: invert(15%) sepia(97%) saturate(6810%) hue-rotate(321deg) brightness(103%) contrast(103%);
+    transition: 0.3s;
+
+}
+
+/* responsive mobile*/
+
+
+@media screen and (max-width:412px){
+
+form {
+
+        background-color: rgba(129, 129, 129, 0.103);
+        backdrop-filter: blur(7px);
+        width: 300px;
+        height: 500px;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 200px;
+        border: 2px solid #575666;
+        position: relative;
+    }
+
+form>input {
+    display: flex;
+    width: 227px;
+    height: 40px;
+    margin: 30px 0px 0px 34px;
+    border-radius: 3px;
+    padding: 5px 0px 5px 8px;
+    background: #41404e;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+form>button {
+
+    width: 235px;
+    height: 60px;
+    margin: 30px 0px 0px 34px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #030305;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.shape:first-child {
+    background-image: linear-gradient(#ff008c, #7a006c);
+    position: absolute;
+    margin: -80px -32px;
+}
+
+.shape:last-child {
+    background-image: linear-gradient(#206dc5, #0c233a);
+    position: absolute;
+    margin: 406px 246px;
+}
+
+
+}
